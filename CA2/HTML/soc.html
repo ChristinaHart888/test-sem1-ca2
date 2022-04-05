@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href='../CSS/style.css' rel='stylesheet'/>
+    <link href='../CSS/soc.css' rel='stylesheet'/>
+    <script src="../JS/4DToTo.js" ></script>
+    <!-- Author: Chua Teck Yong
+    Class: DCITP/1A/03
+    Admin Number: 2102735 -->
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+    <div class="container-fluid">
+
+    <a href="https://www.sp.edu.sg/" class="navbar-brand">
+      Bloog
+    </a>
+            
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smolNav" 
+    aria-controls="smolNav" aria-expanded="false" aria-label="Toggle Navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="smolNav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="./index.html">
+            About Me
+        </a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="historyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            History
+          </a>
+          <div class="dropdown-menu" aria-labelledby="historyDropdown">
+            <a class="dropdown-item" href="./history(pri).html">Primary School</a>
+            <a class="dropdown-item" href="./history(sec).html">Secondary School</a>
+          </div>
+        </div>
+        <a class="nav-item nav-link" href="./sp.html">
+            Life@SP
+        </a>
+        <a class="nav-item nav-link active" href="./soc.html">
+            SoC
+        </a>
+        <a class="nav-item nav-link" href="./feedback.html">
+            Feedback
+        </a>
+      </div><!--NavBar-->
+    </div><!--Collapse-->
+  </div><!--Container-->
+</nav><!--Nav-->
+<div class="container-fluid">
+  <div class="row">
+      <p class="display-4 mx-auto">Getting into SoC</p>
+  </div><!--End Row-->
+  <div class="row">
+    <p class="col-md-9 col-sm-12 mx-auto">&nbsp;&nbsp;My journey with SoC actually started when I was in secondary school, when I applied for this course through the Early Admission Excersise(EAE). After filling up my portfolio 
+      I got selected for an interview, where I showed off a program that I learnt to create over the holidays. The program is a very simple one, where a random 4-digit number is generated 
+      so that my grandmother could use it to get lucky numbers for the 4-D and ToTo. In hindsight, this program was pretty pointless, as one could easily just ask the cashier for a random numberwhen buying 4-D or ToTo
+      but alas, for anyone interested, here are the programs that got me through the interview: 
+    </p>
+  </div><!--End Row-->
+  <div class="row">
+    <div class="btn-group col-sm-12 col-md-9 col-lg-6 mx-auto" role="group" aria-label="project">
+      <button type="button" class="btn btn-secondary" onclick="fourD()">4-D</button>
+      <button type="button" class="btn btn-secondary" onclick="ToTo()">ToTo</button>
+    </div><!--End Button Grp-->
+  </div><!--End Row-->
+  <div class="row">
+    <p id="result" class="mx-auto"></p>
+  </div><!--End Row-->
+  <div class="row">
+     <img src="../Images/lottery.png" class="col-sm-12 col-md-6 col-lg-3 mx-auto">
+  </div><!--End Row-->
+  <div class="row">
+    <p class="display-4 mx-auto">What I'm learning</p>
+  </div><!--End Row-->
+  <div class="row">
+    <p class="col-md-9 col-sm-12 mx-auto">&nbsp;&nbsp;As of writing this blog, I am currently a year 1 student, and my modules can be split into 2 parts: Core modules, and general moudules.
+      Starting off with the core modules, there are Fundementals of Commputing(FoC), Fundementals of Programming(FoP), and Front-End Web Development(FED). 
+    </p>
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;In FoC, we learn how do computers work,
+      not just on the surface level, but also deeper down like how the CPU works or how the internet works, I personally do not really enjoy this module as my lecturer is really hard to understand,
+      and he speaks really quickly, so catching up to his speed is an uphill task, and now I've resorted to just self-studying the course notes.
+    </p>
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;In FoP, we learn about how to program in a language know as JavaScript. In this course, we need to constantly turn our brains to think of how to program the solutions to 
+      our problems at hand, and is my personal favourite module of the bunch, as the feeling of satisfaction you get after coompleting a hard problem is really amazing, and this course has also
+      taught me to be more observant to find out issues with my code, so I would say that is nice added benefit.
+    </p>
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;In FED, we learn how to create websites, like the one that you are on right now. Everything from HTML to add contents to the website, to CSS to style the website, and JavaScript
+      for interactiive features, we learn all the basics to create a functional website. This is not my favourite course, mainly beasue it requires some creative elements when creating websites,
+      which is not my strong suit.
+    </p>
+    <img class="img-fluid mx-auto col-sm-12 col-md-9 img-thumbnail" src="../Images/coding.jpg"><!--https://pixabay.com/photos/work-typing-computer-notebook-731198/-->
+  </div><!--End Row-->
+  <div class="row">
+    <p class="col-md-9 col-sm-12 mx-auto">And here is a summary of my non-core modules. These modules for the most part are not unique to my course, and many students from other classes are 
+      likely taking the same or similiar modules to us. These modules are: Math, Communicating for PRoject effectiveness(CPR), Critical and Analytical Thinking(CAT), Mathematics, and 
+      Education and Career Guidance(ECG).
+    </p>
+  </div><!--End Row-->
+  <div class="row">
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;Starting off with CPR, this course pits you with 3-4 of your classmates to come up with a solution to a real world problem, and then forming a proposal and doing a presentation
+      on our solution. I personally do not mind this course as our lecturer is a nice person, and I find it rather fun to work with other people that I don't know as it increases my contacts
+      as well as significantly lightens the workload of an individual. Overall, I quite enjoy this course.
+    </p>
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;Next up is CAT. Similiarly to the aformentioned CPR, this module pits us with 3-4 of your classmates with similiar interests and hobbies. In this course, we learn how to
+      check validity of sources when doing research on a topic. Our assignment in this module was to come up with a question that would hold some significance in other people's lives, in my
+      case, my team went with "Do video games cause violence?" as our group's common interest was video games. Overall, my experience with CAT has been rather dull, as my group rarely communicates
+      with each other, and we do almost everything either last minute or straight up late.
+    </p>
+    <p class="col-lg-4 col-md-6 col-sm-12 mx-auto border border-danger">
+      &nbsp;&nbsp;Now onto Mathmatics, this course was actually specially curated for video game creation in mind so it is in some ways a core module but I'll consider it as a non-core module
+      for this blog. As previously mentioned, this course is specially designed for video game creators, learning about math concepts such as probability that should help us when greating games.
+      My lecturer for this module is rather friendly, approachable and flexible, and thus I actually really enjoy my time in his lessons very much. Overall, very enjoyable course.
+    </p>
+    <img class=" img-fluid row col-md-9 col-sm-12 mx-auto img-thumbnail" src="../Images/MathMeme.jpg"><!--https://knowyourmeme.com/memes/math-lady-confused-lady-->
+  </div><!--End Row-->
+  <div class="row">
+    <p class="display-4 mx-auto">Job Prospects</p>
+  </div>
+  <div class="row">
+    <p class="col-md-9 col-sm-12 mx-auto">&nbsp;&nbsp;As we move into a more technically advanced future, the demand for tech-savy individuals will be on the rise. As such, there are quite a 
+      number of jobs to choose from now, not including the potential jobs that will be created in the future. Of course, your job options can vary based on your specialisation, but in general,
+      here is a list of a handful of jobs available for most people in this course:
+    </p>
+    
+  </div><!--End Row-->
+  <div class="row">
+    <ul class="list-group mx-auto mb-5">
+      <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank">Developer</a></li>
+      <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Software_engineer" target="_blank">Software Engineer</a></li>
+      <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Mobile_app_development" target="_blank">App Developer</a></li>
+      <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">Data Scientist</a></li>
+      <li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Video_game_developer" target="_blank">Game Developer</a></li>
+    </ul>
+    </div><!--End Row-->
+</div><!--End Conatiner-->
+<footer class="page-footer font-small bg-dark">
+  <div class="container">
+
+    <div class="row">
+      <p class="mx-auto my-auto text-light">You can find me on these social platforms:</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 py-5">
+        <div class="mx-auto">
+
+          <!-- Reddit -->
+          <a href="https://www.reddit.com/user/ChristinaHart888" target="_blank">
+            <img src="../Images/reddit.png" class="col-2">
+          </a>
+
+          <!--Discord-->
+          <a href="https://discordapp.com/users/455712009405726721" target="_blank">
+            <img src="../Images/discord.png" class="col-2">
+          </a>
+
+          <!--Twitter-->
+          <a href="https://twitter.com/ZOGADAGA1" target="_blank">
+            <img src="../Images/twitter.png" class="col-2">
+          </a>
+
+          <!--Insta-->
+          <a href="https://www.instagram.com/z3r0chr15t/" target="_blank">
+            <img src="../Images/Insta.png" class="col-2">
+          </a>
+
+          <!--MAL-->
+          <a href="https://myanimelist.net/profile/ChristinaHart888" target="_blank">
+            <img src="../Images/MyAnimeList_Logo.png" class="col-2">
+          </a>
+        </div>
+      </div><!-- Grid column -->
+    </div><!-- Grid row-->
+  </div><!-- Footer Elements -->
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="../JS/4DToTo.js"></script>
+</body>
+
+</html>

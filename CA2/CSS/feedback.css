@@ -1,0 +1,6 @@
+label {
+    font-size: calc(0.75vw + 15px)
+}
+body {
+    background-image: radial-gradient(#ffffff, #b3b3cc, #666699);
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href='../CSS/style.css' rel='stylesheet'/>
+    <link href='../CSS/feedback.css' rel='stylesheet'/>
+    <!-- Author: Chua Teck Yong
+    Class: DCITP/1A/03
+    Admin Number: 2102735 -->
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+        <div class="container-fluid">
+    
+        <a href="https://www.sp.edu.sg/" class="navbar-brand">
+          Bloog
+        </a>
+                
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smolNav" 
+        aria-controls="smolNav" aria-expanded="false" aria-label="Toggle Navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="smolNav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="./index.html">
+                About Me
+            </a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="historyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                History
+              </a>
+              <div class="dropdown-menu" aria-labelledby="historyDropdown">
+                <a class="dropdown-item" href="./history(pri).html">Primary School</a>
+                <a class="dropdown-item" href="./history(sec).html">Secondary School</a>
+              </div>
+            </div>
+            <a class="nav-item nav-link" href="./sp.html">
+                Life@SP
+            </a>
+            <a class="nav-item nav-link" href="./soc.html">
+                SoC
+            </a>
+            <a class="nav-item nav-link active" href="./feedback.html">
+                Feedback
+            </a>
+          </div><!--NavBar-->
+        </div><!--Collapse-->
+      </div><!--Container-->
+    </nav><!--Nav-->
+<!--Content----------------------------------------------------------------------------->
+    <div class="container-fluid text-center">
+    <p class="col-12 display-3">Any feedback? Feel free to share down below!</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6 col-lg-3 mx-auto">
+          <label for="fName">First Name</label>
+          <input type="text" class="form-control" id="fName" placeholder="First Name">
+        </div><!--End Form Group-->
+        <div class="form-group col-md-6 col-lg-3 mx-auto">
+          <label for="lName">Last Name</label>
+          <input type="text" class="form-control" id="lName" placeholder="Last Name">
+        </div>
+      </div><!--End Form Row-->
+      <div class="form-group">
+        <p>Please enter your age:</p>
+        <div class="form-check form-check-inline my-5">
+          <input class="form-check-input" type="radio" id="priSch" value="option1" name="age">
+          <label class="form-check-label" for="priSch">
+            0-12
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="secSch" value="option1" name="age">
+          <label class="form-check-label" for="secSch">
+            13-16
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="terSch" value="option1" name="age">
+          <label class="form-check-label" for="terSch">
+            17-21
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="yAdult" value="option1" name="age">
+          <label class="form-check-label" for="yAdult">
+            21-29
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="older" value="option1" name="age">
+          <label class="form-check-label" for="older">
+            >30
+          </label>
+        </div><!--End form-check-->
+      </div><!--End form group-->
+      <div class="form-group">
+        <label for="joinSOC">After reading this blog, how tempted are you to join SOC?</label>
+          <select class="form-control my-5 col-lg-4 col-md-6 col-sm-12 mx-auto" id="joinSOC">
+          <option></option>
+          <option>Very Tempted</option>
+          <option>Tempted</option>
+          <option>Neutral</option>
+          <option>Not Tempted</option>
+          <option>Very Not Tempted</option>
+          </select>
+      </div><!--End Form Group-->
+      <div class="form-group">
+        <label for="influence">On a scale of 0-10, how has this blog changed you view of SOC?</label>
+        <input type="range" class="form-control-range my-5 col-lg-4 col-md-6 col-sm-12 mx-auto" id="influence" min="0" max="10" step="1" value="5">
+        <p id="val"></p>
+      </div><!--End Form Group-->
+      <div class="form-group">
+        <label for="comments">Any comments/enquiries? Feel free to leave them in the box below!</label>
+        <input type="text" class="form-control my-5 col-lg-4 col-md-6 col-sm-12 mx-auto"" id="comments" placeholder="Enter your comments here...">
+      </div>
+
+      <button type="submit" class="btn-primary btn mb-5">Submit</button>
+    </form>
+</div><!--End Container-->
+<footer class="page-footer font-small bg-dark">
+  <div class="container">
+
+    <div class="row">
+      <p class="mx-auto my-auto text-light">You can find me on these social platforms:</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 py-5">
+        <div class="mx-auto">
+
+          <!-- Reddit -->
+          <a href="https://www.reddit.com/user/ChristinaHart888" target="_blank">
+            <img src="../Images/reddit.png" class="col-2">
+          </a>
+
+          <!--Discord-->
+          <a href="https://discordapp.com/users/455712009405726721" target="_blank">
+            <img src="../Images/discord.png" class="col-2">
+          </a>
+
+          <!--Twitter-->
+          <a href="https://twitter.com/ZOGADAGA1" target="_blank">
+            <img src="../Images/twitter.png" class="col-2">
+          </a>
+
+          <!--Insta-->
+          <a href="https://www.instagram.com/z3r0chr15t/" target="_blank">
+            <img src="../Images/Insta.png" class="col-2">
+          </a>
+
+          <!--MAL-->
+          <a href="https://myanimelist.net/profile/ChristinaHart888" target="_blank">
+            <img src="../Images/MyAnimeList_Logo.png" class="col-2">
+          </a>
+        </div>
+      </div><!-- Grid column -->
+    </div><!-- Grid row-->
+  </div><!-- Footer Elements -->
+</footer>
+<script src="../JS/feedback.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>
